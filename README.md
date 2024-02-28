@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-<a href="https://www.paypal.com/donate?hosted_button_id=GTLF6LZ5LRSE4"><img width="32px" src="https://raw.githubusercontent.com/Kungger-git/files/master/imgs/ppal.png" alt="Support my work via Paypal"></a>
+<a href="https://cash.app/$awfixer"><img width="32px" src="https://raw.githubusercontent.com/axyl-os/axyl-os.github.io/master/assets/img/axyl-logo.svg" alt="Support my work via CashApp"></a>
 </p>
 
 <p align="center">
