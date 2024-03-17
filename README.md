@@ -34,7 +34,7 @@
   <a href="https://axyl-os.github.io/">
     <img src="https://img.shields.io/badge/Learn_More-h?color=1B5488&style=for-the-badge">
   </a>
-  <a href="https://discord.com/invite/GTeVsV2vZd">
+  <a href="https://discord.com/invite/qAXMkQdwjj">
     <img src="https://img.shields.io/badge/JOIN_THE_AXYL_SERVER-%23586AA8.svg?style=for-the-badge&logo=discord&logoColor=white">
   </a>
 </p>
