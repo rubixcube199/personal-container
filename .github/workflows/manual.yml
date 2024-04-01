@@ -60,8 +60,8 @@ jobs:
         
       - name: Build ArchISO
         run: |
-          cd scripts
-          ./build-iso.sh
+          cd installation-scripts
+          ./build.sh
           
       - name: Upload to GitHub Release
         env:
