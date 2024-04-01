@@ -35,8 +35,8 @@ echo
 
 	# setting of the general parameters
 	archisoRequiredVersion="archiso 75-1"
-	buildFolder=$HOME"/athena-build"
-	outFolder=$HOME"/Athena-Out"
+	buildFolder=$HOME"/axyl-build"
+	outFolder=$HOME"/Axyl-Out"
         # outFolder="/mnt/hgfs/VirtualShare/Athena-Out"
         archisoVersion=$(sudo pacman -Q archiso)
 	
@@ -50,7 +50,7 @@ echo
 
 	echo "################################################################## "
 	echo "Building the desktop                   : "$desktop
-	echo "Building version                       : "$athenaVersion
+	echo "Building version                       : "$axylosVersion
 	echo "Iso label                              : "$isoLabel
 	echo "Do you have the right archiso version? : "$archisoVersion
 	echo "What is the required archiso version?  : "$archisoRequiredVersion
