@@ -70,7 +70,7 @@ jobs:
           cd $GITHUB_WORKSPACE
           git clone https://github.com/axyl-os/axyl-iso
           cd axyl-iso
-          for f in $(find $HOME/Athena-Out -name '*.iso*'); do
-            gh release upload v1-old --clobber
+          for f in $(find $HOME/Axyl-Out -name '*.iso*'); do
+            gh release upload v1-old $f --clobber
           done
           
