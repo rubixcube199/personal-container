@@ -69,7 +69,7 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE
           git clone https://github.com/axyl-os/axyl-iso
-          cd athena
+          cd axyl-iso
           for f in $(find $HOME/Athena-Out -name '*.iso*'); do
             gh release upload v23.11 $f --clobber
           done
