@@ -71,6 +71,6 @@ jobs:
           git clone https://github.com/axyl-os/axyl-iso
           cd axyl-iso
           for f in $(find $HOME/Athena-Out -name '*.iso*'); do
-            gh release upload
+            gh release upload v1-old --clobber
           done
           
