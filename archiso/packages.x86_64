@@ -126,7 +126,7 @@ zsh
 ###             VIA CALAMARES CONFIG                ###
 #######################################################
 
-axyl-calamares
+#axyl-calamares
 axyl-calamares-config
 axyl-welcome
 
@@ -198,9 +198,9 @@ xf86-video-vesa
 ########################
 #### Nvidia Drivers ####
 ########################
-nvidia
-nvidia-utils
-nvidia-settings
+#nvidia
+#nvidia-utils
+#nvidia-settings
 
 #####################
 #### Virtual Box ####
@@ -282,18 +282,18 @@ blueberry
 ###############
 #### Sound ####
 ###############
-alsa-plugins
-alsa-tools
-alsa-utils
-pamixer
-pavucontrol
-portaudio
-pipewire
-wireplumber
-pipewire-alsa
-pipewire-jack
-pipewire-zeroconf
-pipewire-pulse
+#alsa-plugins
+#alsa-tools
+#alsa-utils
+#pamixer
+#pavucontrol
+#portaudio
+#pipewire
+#wireplumber
+#pipewire-alsa
+#pipewire-jack
+#pipewire-zeroconf
+#pipewire-pulse
 
 ###############
 #### Files ####
