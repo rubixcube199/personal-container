@@ -55,14 +55,9 @@ jobs:
           cd installation-scripts
           ./build.sh
           
-      - name: Upload to GitHub Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          cd
-          git clone https://github.com/axyl-os/axyl-iso
-          cd axyl-iso
-          for f in $(find $HOME/Axyl-Out -name '*.iso*'); do
-            gh release upload v1-old $f --clobber
+    - uses: actions/upload-artifact@v4
+      with:
+        name: AxylOS ISO v1-old
+        path: Axyl-Iso
           done
           
