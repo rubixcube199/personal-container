@@ -8,7 +8,7 @@ COPY . .
 # Quality-of-life changes
 RUN [ "sed", "-i", "s/NoProgressBar/#NoProgressBar/g", "/etc/pacman.conf" ]
 RUN [ "sed", "-i", "s/#Color/Color/g", "/etc/pacman.conf" ]
-
+RUN [ "sed", "-i", "s/SigLevel = Required/SigLevel = Optional TrustAll/g", "/etc/pacman.conf" ]
 # Install build dependencies
 RUN pacman -Syyu --needed --noconfirm archiso mkinitcpio-archiso git squashfs-tools
 
