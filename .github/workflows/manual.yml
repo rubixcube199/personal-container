@@ -13,7 +13,7 @@ jobs:
       ISO_ARCHITECTURE: 'x86_64'
     runs-on: ubuntu-latest
     container:
-      image: rubixcube199/axylos:latest
+      image: athenaos/base-devel:latest
       options: --privileged 
     steps:
       - name: Checkout files
