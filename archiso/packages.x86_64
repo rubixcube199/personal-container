@@ -165,7 +165,7 @@ papirus-icon-theme
 ###############
 ttf-dejavu
 ttf-liberation
-nerd-fonts-jetbrains-mono
+#nerd-fonts-jetbrains-mono
 
 ###################
 #### Utilities ####
@@ -329,9 +329,9 @@ vim
 ######################
 #### AUR Packages ####
 ######################
-ani-cli-git
+#ani-cli-git
 cava
-devour
+#devour
 i3lock-color
 ksuperkey
 networkmanager-dmenu-git
