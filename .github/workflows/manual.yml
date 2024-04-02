@@ -59,7 +59,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cd $GITHUB_WORKSPACE
+          cd
           git clone https://github.com/axyl-os/axyl-iso
           cd axyl-iso
           for f in $(find $HOME/Axyl-Out -name '*.iso*'); do
