@@ -291,10 +291,3 @@ echo "- Check your out folder : $outFolder"
 tput sgr0
 echo "################################################################## "
 echo
-
-PDIR=$(dirname "$PWD")
-if [[ -f "$HOME/Axyl-Iso/axyl-$(date +%Y.%m.%d)-x86_64.iso" ]]; then
-  notify-send -a "Build Axyl iso" -t 10000 "Axyl Iso has finished building..." --icon="$PDIR/archiso/airootfs/usr/share/axyl.png"
-else
-  notify-send -a "Build Axyl iso" -t 10000 -u Critical "Axyl Iso has has not been found..." --icon="$PDIR/archiso/airootfs/usr/share/axyl.png"
-fi
