@@ -61,6 +61,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           for f in $(find $HOME/Axyl-Iso -name '*.iso*'); do
+          git clone https://github.com/axyl-os/axyl-iso
+          cd axyl-iso
             gh release upload v1-old $f --clobber
           done
           
