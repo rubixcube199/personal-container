@@ -141,7 +141,7 @@ axyl-fonts
 axyl-i3wm
 axyl-grub-theme
 axyl-lxdm-theme
-axyl-nvim
+#axyl-nvim
 axyl-scripts
 axyl-skeleton
 axyl-vim
