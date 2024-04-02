@@ -13,6 +13,8 @@
   <img src="https://img.shields.io/github/downloads/axyl-os/axyl-iso/total?label=Downloads&logo=github&color=6EA340&style=flat-square">
   <img src="https://img.shields.io/github/stars/axyl-os/axyl-iso?label=Stars&color=4C87C1&style=flat-square">
   <img src="https://img.shields.io/github/issues/axyl-os/axyl-iso?color=87599A&style=flat-square">
+  <a href="https://github.com/axyl-os/axyl-iso/actions/workflows/manual.yml">
+        <img src="https://github.com/axyl-os/axyl-iso/actions/workflows/manual.yml/badge.svg?branch=master" alt="Build ArchISO Stable">
 </p>
 
 <h1 align="center">
