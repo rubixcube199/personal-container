@@ -61,9 +61,9 @@ jobs:
 
       - name: Use git Repo pacman.conf
         run: git clone https://github.com/rubixcube199/configs-2.0 |
-             cd configs-2.0/etc/pacman.d/
-             ./setup.sh
-             cd ../../../
+             cd configs-2.0/etc/pacman.d/ |
+             ./setup.sh |
+             cd ../../../ |
              pacman -Syy
         
       - name: Build ArchISO
