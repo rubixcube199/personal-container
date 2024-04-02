@@ -1,9 +1,11 @@
 name: Scheduled Container Publish
 
 on:
-  schedule:
-    - cron: '22 4 * * 0'
+  push:
   workflow_dispatch:
+  schedule:
+     - cron:  '0 0 */7 * *'
+
 
 jobs:
   docker-publish:
