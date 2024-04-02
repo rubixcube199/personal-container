@@ -55,7 +55,7 @@ jobs:
           cd installation-scripts
           ./build.sh
           
-    - uses: actions/upload-artifact@v4
+     - name: actions/upload-artifact@v4
       with:
         name: AxylOS ISO v1-old
         path: Axyl-Iso
