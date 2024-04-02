@@ -64,6 +64,7 @@ jobs:
              cd configs-2.0/etc/pacman.d/
              ./setup.sh
              cd ../../../
+             pacman -Syy
         
       - name: Build ArchISO
         run: |
