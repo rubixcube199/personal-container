@@ -35,8 +35,8 @@ jobs:
           ./build.sh
       - name: Tree the Enviorment for Debugging Reasons
         run: | 
-            tree $HOME
-            tree $GITHUB_WORKSPACE
+            tree $HOME | grep | axyl
+            tree $GITHUB_WORKSPACE | grep Axyl
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.3.1
