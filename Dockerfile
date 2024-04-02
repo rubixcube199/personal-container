@@ -1,4 +1,4 @@
-FROM gabrielmatthews/archbtw:latest
+FROM archlinux/archlinux:latest
 
 WORKDIR /axyl-iso
 
