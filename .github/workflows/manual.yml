@@ -55,9 +55,12 @@ jobs:
           cd installation-scripts
           ./build.sh
           
-     - name: actions/upload-artifact@v4
-      with:
-        name: AxylOS ISO v1-old
-        path: Axyl-Iso
+
+      - name: Upload to GitHub Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          for f in $(find $HOME/Axyl-Iso -name '*.iso*'); do
+            gh release upload v1-old $f --clobber
           done
           
