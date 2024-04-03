@@ -331,7 +331,7 @@ vim
 ######################
 #ani-cli-git
 cava
-devour
+#devour
 i3lock-color
 ksuperkey
 networkmanager-dmenu-git
