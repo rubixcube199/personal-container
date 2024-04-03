@@ -33,9 +33,6 @@ jobs:
         run: |
           cd installation-scripts
           ./build.sh
-      - name: Tree the Enviorment for Debugging Reasons
-        run: | 
-            tree $HOME
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.3.1
@@ -46,3 +43,14 @@ jobs:
             retention-days: 60
             compression-level: 0
             overwrite: false
+
+      - name: Upload to GitHub Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd $GITHUB_WORKSPACE
+          git clone https://github.com/Athena-OS/athena
+          cd athena
+          for f in $(find /github/home/Axyl-Iso -name '*.iso*'); do
+            gh release upload v23.11 $f --clobber
+          done
