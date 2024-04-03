@@ -8,8 +8,8 @@ on:
 jobs:
   build:
     env:
-      ATHENA_VERSION: 'rolling'
-      ISO_VERSION: 'rolling' # It must be the same on profiledef.sh and installation_script
+      AXYL_VERSION: 'v1-old-"$(date +%Y.%m.%d)"'
+      ISO_VERSION: 'v1-old-"$(date +%Y.%m.%d)"'
       ISO_ARCHITECTURE: 'x86_64'
     runs-on: ubuntu-latest
     container:
@@ -43,5 +43,22 @@ jobs:
             retention-days: 60
             compression-level: 0
             overwrite: false
-
       
+      - name: Create a GitHub Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd $GITHUB_WORKSPACE
+          git clone https://github.com/axyl-os/axyl-iso
+          cd axyl-iso
+            gh release create v1-old-"$(date +%Y.%m.%d)" --generate-notes
+
+      - name: Upload to GitHub Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd $GITHUB_WORKSPACE
+          cd axyl-iso
+          for f in $(find /github/home/Axyl-Iso -name '*.iso*'); do
+            gh release upload v1-old-"$(date +%Y.%m.%d)" $f --clobber
+          done
