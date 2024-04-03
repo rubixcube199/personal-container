@@ -126,7 +126,7 @@ zsh
 ###             VIA CALAMARES CONFIG                ###
 #######################################################
 
-exodia-calamares # this is fr an experiment
+#exodia-calamares # this is fr an experiment
 #axyl-calamares
 axyl-calamares-config
 axyl-welcome
