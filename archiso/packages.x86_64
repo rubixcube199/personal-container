@@ -198,9 +198,9 @@ xf86-video-vesa
 ########################
 #### Nvidia Drivers ####
 ########################
-#nvidia
-#nvidia-utils
-#nvidia-settings
+nvidia
+nvidia-utils
+nvidia-settings
 
 #####################
 #### Virtual Box ####
@@ -282,18 +282,18 @@ blueberry
 ###############
 #### Sound ####
 ###############
-#alsa-plugins
-#alsa-tools
-#alsa-utils
-#pamixer
-#pavucontrol
-#portaudio
-#pipewire
-#wireplumber
-#pipewire-alsa
-#pipewire-jack
-#pipewire-zeroconf
-#pipewire-pulse
+alsa-plugins
+alsa-tools
+alsa-utils
+pamixer
+pavucontrol
+portaudio
+pipewire
+wireplumber
+pipewire-alsa
+pipewire-jack
+pipewire-zeroconf
+pipewire-pulse
 
 ###############
 #### Files ####
@@ -331,7 +331,7 @@ vim
 ######################
 #ani-cli-git
 cava
-#devour
+devour
 i3lock-color
 ksuperkey
 networkmanager-dmenu-git
