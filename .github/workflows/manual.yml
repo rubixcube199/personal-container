@@ -50,7 +50,7 @@ jobs:
           cd $GITHUB_WORKSPACE
           git clone https://github.com/axyl-os/axyl-iso
           cd axyl-iso
-            gh release create v1-old-"$(date +%Y.%m.%d)" --generate-notes
+            gh release create v2-beta-citrine-installer-rebase"$(date +%Y.%m.%d)" --generate-notes --prerelease
 
       - name: Upload to GitHub Release
         env:
