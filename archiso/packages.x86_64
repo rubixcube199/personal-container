@@ -126,8 +126,9 @@ zsh
 ###             VIA CALAMARES CONFIG                ###
 #######################################################
 
+citrine
 #exodia-calamares # this is fr an experiment
-axyl-calamares
+#axyl-calamares
 axyl-calamares-config
 axyl-welcome
 
