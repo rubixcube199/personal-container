@@ -1,5 +1,5 @@
 alpha build of AxylOS 2.0 repo
 
-[releases](https://github.com/axylos-2-iso/releases)
+[releases](https://github.com/axyl-os/axylos-2-iso/releases)
 
-[nightly builds](https://github.com/axylos-2-iso/actions)
+[nightly builds](https://github.com/axyl-os/axylos-2-iso/actions)
