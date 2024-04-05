@@ -50,7 +50,7 @@ jobs:
           cd $GITHUB_WORKSPACE
           git clone https://github.com/axyl-os/axylos-2-iso
           cd axylos-2-iso
-            gh release create alpha-citrine-installer-"$(date +%Y.%m.%d)" --generate-notes --prerelease
+            gh release create alpha-"$(date +%Y.%m.%d)" --generate-notes --prerelease
 
       - name: Upload to GitHub Release
         env:
@@ -59,5 +59,5 @@ jobs:
           cd $GITHUB_WORKSPACE
           cd axylos-2-iso
           for f in $(find /github/home/Axyl-Iso -name '*.iso*'); do
-            gh release upload alpha-citrine-installer-"$(date +%Y.%m.%d)" $f --clobber
+            gh release upload alpha-"$(date +%Y.%m.%d)" $f --clobber
           done
