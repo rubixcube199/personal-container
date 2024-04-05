@@ -59,5 +59,5 @@ jobs:
           cd $GITHUB_WORKSPACE
           cd axylos-2-iso
           for f in $(find /github/home/Axyl-Iso -name '*.iso*'); do
-            gh release upload v1-old-"$(date +%Y.%m.%d)" $f --clobber
+            gh release upload alpha-citrine-installer-"$(date +%Y.%m.%d)" $f --clobber
           done
