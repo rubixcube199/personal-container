@@ -1,3 +1,10 @@
+btrfs-progs
+dosfstools
+efibootmgr
+grub
+vim
+zsh
+bluetooth-support
 base
 base-devel
 linux-zen
