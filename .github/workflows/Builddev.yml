@@ -6,8 +6,8 @@ on:
 jobs:
   build:
     env:
-      AXYL_VERSION: 'v1-old-"$(date +%Y.%m.%d)"'
-      ISO_VERSION: 'v1-old-"$(date +%Y.%m.%d)"'
+      AXYL_VERSION: 'alpha-dev-build-"$(date +%Y.%m.%d)"'
+      ISO_VERSION: 'alpha-dev-build-"$(date +%Y.%m.%d)"'
       ISO_ARCHITECTURE: 'x86_64'
     runs-on: ubuntu-latest
     container:
@@ -49,14 +49,14 @@ jobs:
           cd $GITHUB_WORKSPACE
           git clone https://github.com/axyl-os/axylos-2-iso
           cd axylos-2-iso
-            gh release create dev-"$(date +%Y.%m.%d)" --generate-notes --prerelease
+            gh release create alpha-dev-build-"$(date +%Y.%m.%d)" --generate-notes --prerelease
 
       - name: Upload to GitHub Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd $GITHUB_WORKSPACE
-          cd axylos-2-iso
+          cd Axyl-Iso
           for f in $(find /github/home/Axyl-Iso -name '*.iso*'); do
-            gh release upload dev-"$(date +%Y.%m.%d)" $f --clobber
+            gh release upload alpha-dev-build-"$(date +%Y.%m.%d)" $f --clobber
           done
