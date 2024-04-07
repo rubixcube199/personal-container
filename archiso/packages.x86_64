@@ -21,3 +21,4 @@ yay
 edk2-shell
 syslinux
 memtest86+
+mkinitcpio
