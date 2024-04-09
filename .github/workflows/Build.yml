@@ -7,8 +7,8 @@ on:
 jobs:
   build:
     env:
-      AXYL_VERSION: 'v1-old-"$(date +%Y.%m.%d)"'
-      ISO_VERSION: 'v1-old-"$(date +%Y.%m.%d)"'
+      AXYL_VERSION: 'alpha-"$(date +%Y.%m.%d)"'
+      ISO_VERSION: 'alpha-"$(date +%Y.%m.%d)"'
       ISO_ARCHITECTURE: 'x86_64'
     runs-on: ubuntu-latest
     container:
