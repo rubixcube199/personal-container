@@ -4,7 +4,7 @@ efibootmgr
 grub
 vim
 zsh
-bluetooth-support
+#bluetooth-support
 base
 base-devel
 linux-zen
@@ -13,7 +13,7 @@ linux-zen-headers
 linux-firmware
 linux-headers
 networkmanager
-citrine
+#citrine
 sudo
 kitty
 broadcom-wl
