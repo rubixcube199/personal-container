@@ -13,7 +13,7 @@ linux-zen-headers
 linux-firmware
 linux-headers
 networkmanager
-#citrine
+citrine
 sudo
 kitty
 broadcom-wl
@@ -22,3 +22,5 @@ edk2-shell
 syslinux
 memtest86+
 mkinitcpio
+mkinitcpio-archiso
+mkinitcpio-nfs-utils
