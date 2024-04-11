@@ -7,9 +7,9 @@ zsh
 #bluetooth-support
 base
 base-devel
-linux-zen
+amd-ucode
+intel-ucode
 linux
-linux-zen-headers
 linux-firmware
 linux-headers
 networkmanager
