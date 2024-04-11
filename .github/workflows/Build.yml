@@ -1,5 +1,6 @@
 name: Build ArchISO Stable
 on:
+  push:
   workflow_dispatch:
   schedule:
      - cron:  '0 0 */1 * *'
@@ -11,6 +12,7 @@ jobs:
       ISO_VERSION: 'alpha-"$(date +%Y.%m.%d)"'
       ISO_ARCHITECTURE: 'x86_64'
     runs-on: ubuntu-latest
+    permissions: write-all
     container:
       image: athenaos/base-devel:latest
       options: --privileged 
