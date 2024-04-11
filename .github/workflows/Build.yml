@@ -36,7 +36,7 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.3.1
         with:
-              name: axylos-2-iso
+              name: axylos-2-iso-beta
               path: /github/home/Axyl-Iso
               if-no-files-found: warn
               retention-days: 60
@@ -48,8 +48,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
            cd $GITHUB_WORKSPACE
-           git clone https://github.com/axyl-os/axyl-iso
-           cd axyl-iso
+           git clone https://github.com/axyl-os/axylos-2-iso
+           cd axylos-2-iso
            gh release create v2-beta-citrine-installer-rebase"$(date +%Y.%m.%d)" --generate-notes --prerelease
       
       - name: Upload to GitHub Release
@@ -57,7 +57,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd $GITHUB_WORKSPACE
-          cd axyl-iso
+          cd axylos-2-iso
           for f in $(find /github/home/Axyl-Iso -name '*.iso*'); do
               gh release upload v1-old-"$(date +%Y.%m.%d)" $f --clobber
           done
