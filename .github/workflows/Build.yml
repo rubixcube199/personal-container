@@ -8,8 +8,8 @@ on:
 jobs:
   build:
     env:
-      AXYL_VERSION: 'alpha-"$(date +%Y.%m.%d)"'
-      ISO_VERSION: 'alpha-"$(date +%Y.%m.%d)"'
+      AXYL_VERSION: 'v2-beta"$(date +%Y.%m.%d)"'
+      ISO_VERSION: 'v2-beta"$(date +%Y.%m.%d)"'
       ISO_ARCHITECTURE: 'x86_64'
     runs-on: ubuntu-latest
     permissions: write-all
