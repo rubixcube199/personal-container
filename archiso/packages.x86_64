@@ -1,6 +1,7 @@
 btrfs-progs
 dosfstools
 efibootmgr
+bootctl
 grub
 vim
 zsh
