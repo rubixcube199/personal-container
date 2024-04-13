@@ -27,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: rubixcube199/axylos:latest
+          tags: rubixcube199/axylos-v2:latest
