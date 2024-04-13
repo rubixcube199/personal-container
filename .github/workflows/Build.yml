@@ -1,6 +1,5 @@
-name: Build ArchISO Stable
+name: Build AxylOS-V2 Release
 on:
-  push:
   workflow_dispatch:
   schedule:
      - cron:  '0 0 */1 * *'
