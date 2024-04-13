@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="axyl"
-iso_label="axyl_$(date +%Y%m)"
+iso_name="v2-dev-build-"$(date +%Y.%m.%d)""
+iso_label="v2-dev-build-"$(date +%Y.%m.%d)""
 iso_publisher="Axyl <https://github.com/axyl-os>"
 iso_application="Axyl Live/Rescue CD"
-iso_version="$(date +%Y.%m.%d)"
+iso_version="v2-dev-build-"$(date +%Y.%m.%d)""
 install_dir="arch"
 buildmodes=('iso')
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
