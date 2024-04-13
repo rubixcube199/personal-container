@@ -26,3 +26,4 @@ mkinitcpio-archiso
 mkinitcpio-nfs-utils
 nbd
 gptfdisk
+parted
