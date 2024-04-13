@@ -1,4 +1,4 @@
-name: Scheduled Container Publish
+name: Dev Docker Contain Pub
 
 on:
   push:
