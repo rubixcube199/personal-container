@@ -1,4 +1,4 @@
-name: Scheduled Container Publish
+name: Scheduled Container Publish weekly build
 
 on:
   workflow_dispatch:
