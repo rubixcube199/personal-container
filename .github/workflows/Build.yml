@@ -1,4 +1,4 @@
-name: Build AxylOS-2-iso weekly
+name: Build AxylOS-2-ISO weekly
 on:
   workflow_dispatch:
   schedule:
