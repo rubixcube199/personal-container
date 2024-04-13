@@ -1,15 +1,14 @@
-name: Build ArchISO Stable
+name: Build AxylOS-2-iso weekly
 on:
-  push:
   workflow_dispatch:
   schedule:
-     - cron:  '0 0 */1 * *'
+     - cron:  '0 0 */7 * *'
   
 jobs:
   build:
     env:
-      AXYL_VERSION: 'v2-preview-"$(date +%Y.%m.%d)"'
-      ISO_VERSION: 'v2-preview-"$(date +%Y.%m.%d)"'
+      AXYL_VERSION: 'v2-weekly-build-"$(date +%Y.%m.%d)"'
+      ISO_VERSION: 'v2-weekly-build-"$(date +%Y.%m.%d)"'
       ISO_ARCHITECTURE: 'x86_64'
     runs-on: ubuntu-latest
     permissions: write-all
@@ -52,7 +51,7 @@ jobs:
            cd $GITHUB_WORKSPACE
            git clone https://github.com/axyl-os/axylos-2-iso
            cd axylos-2-iso
-           gh release create v2-preview-"$(date +%Y.%m.%d)" --generate-notes
+           gh release create v2-weekly-build-"$(date +%Y.%m.%d)" --generate-notes
       
       - name: Upload to GitHub Release
         env:
@@ -61,5 +60,5 @@ jobs:
           cd $GITHUB_WORKSPACE
           cd axylos-2-iso
           for f in $(find /github/home/Axyl-Iso -name '*.iso*'); do
-              gh release upload v2-preview-"$(date +%Y.%m.%d)" $f --clobber
+              gh release upload v2-weekly-build-"$(date +%Y.%m.%d)" $f --clobber
           done
