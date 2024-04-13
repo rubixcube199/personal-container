@@ -3,7 +3,7 @@ name: Scheduled Container Publish
 on:
   workflow_dispatch:
   schedule:
-     - cron:  '0 0 */1 * *'
+     - cron:  '0 0 */7 * *'
 
 
 jobs:
@@ -27,4 +27,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: rubixcube199/axylos-v2:latest
+          tags: rubixcube199/axylos-2-weekly:latest
