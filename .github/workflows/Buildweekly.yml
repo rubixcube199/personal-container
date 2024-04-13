@@ -11,6 +11,7 @@ jobs:
       ISO_VERSION: 'v1-old-"$(date +%Y.%m.%d)"'
       ISO_ARCHITECTURE: 'x86_64'
     runs-on: ubuntu-latest
+    permissions: write all
     container:
       image: athenaos/base-devel:latest
       options: --privileged 
