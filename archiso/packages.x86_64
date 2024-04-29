@@ -1,7 +1,4 @@
-btrfs-progs
 dosfstools
-efibootmgr
-grub
 vim
 zsh
 #bluetooth-support
@@ -13,7 +10,6 @@ linux
 linux-firmware
 linux-headers
 networkmanager
-citrine
 sudo
 kitty
 broadcom-wl
@@ -27,3 +23,8 @@ mkinitcpio-nfs-utils
 nbd
 gptfdisk
 parted
+fish
+debugedit
+neovim
+git
+github-cli
